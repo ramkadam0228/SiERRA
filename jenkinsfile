@@ -1,0 +1,38 @@
+    pipeline {
+        agent any // Or specify a node/label
+
+        stages {
+            stage('Checkout') {
+                steps {
+                    git 'https://github.com/your-repo/your-project.git' // Replace with your repo
+                }
+            }
+            stage('Build') {
+                steps {
+                    sh 'mvn clean install' // Example for Maven project
+                }
+            }
+            stage('Test') {
+                steps {
+                    sh 'mvn test' // Example for Maven project
+                }
+            }
+            stage('Deploy') {
+                steps {
+                    // Commands for deployment, e.g., to a server, Docker registry, etc.
+                    echo 'Deploying application...'
+                }
+            }
+        }
+        post {
+            always {
+                echo 'Pipeline finished.'
+            }
+            success {
+                echo 'Pipeline succeeded!'
+            }
+            failure {
+                echo 'Pipeline failed!'
+            }
+        }
+    }
