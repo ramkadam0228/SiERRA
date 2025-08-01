@@ -4,7 +4,7 @@
         stages {
             stage('Checkout') {
                 steps {
-                    git 'https://github.com/your-repo/your-project.git' // Replace with your repo
+                    git 'https://github.com/ramkadam0228/SiERRA.git' // Replace with your repo
                 }
             }
             stage('Build') {
