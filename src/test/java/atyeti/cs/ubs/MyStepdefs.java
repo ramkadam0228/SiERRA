@@ -3,6 +3,8 @@ package atyeti.cs.ubs;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -23,6 +25,7 @@ public class MyStepdefs {
     public void printValues() {
         System.out.println("Before Hook: TAPIOUTFile = " + TAPIOUTFile);
     }
+
 
 
 }
