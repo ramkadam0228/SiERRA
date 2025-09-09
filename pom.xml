@@ -55,6 +55,7 @@
 			<version>7.15.0</version>
 			<scope>test</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-spring</artifactId>
@@ -187,12 +188,12 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0</version> <!-- Use a recent version -->
-				<configuration>
-					<includes>
-						<include>**/*Runner.java</include> <!-- Include your Cucumber Runner classes -->
-					</includes>
-					<!-- Other Surefire configurations if needed -->
-				</configuration>
+<!--				<configuration>-->
+<!--					<includes>-->
+<!--						<include>**/*Runner.java</include> &lt;!&ndash; Include your Cucumber Runner classes &ndash;&gt;-->
+<!--					</includes>-->
+<!--					&lt;!&ndash; Other Surefire configurations if needed &ndash;&gt;-->
+<!--				</configuration>-->
 			</plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
